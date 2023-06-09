@@ -19,38 +19,33 @@
   <body>
     <!-- Page Header-->
     <header class="header" id="header">
-      <nav class="navigation">
-        <ul class="nav-items">
-          <li class="nav-iterm">
-            <a class="nav-item-link" href="">Features</a>
-          </li>
-          <li class="nav-iterm">
-            <a class="nav-item-link" href="">Details</a>
-          </li>
-          <li class="nav-iterm">
-            <a class="nav-item-link" href="">Reviews</a>
-          </li>
-          <li class="nav-iterm"><a class="nav-item-link" href="">Plan</a></li>
-          <li class="nav-iterm">
-            <a class="nav-item-link" href="">Sign Up</a>
-          </li>
-        </ul>
-      </nav>
-      <!--<div>
-        <img
-          height="200px"
-          src="./assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg"
-          alt="food-img"
-        />
-      </div>-->
-      <div class="header-main">
-        <div class="header-main-heading">
-          <h1>Meals Plans.</h1>
-          <h1>For <span>Everyone</span></h1>
-        </div>
-        <div class="header-main-btn-group">
-          <a href="#" class="btn">Book Now</a>
-          <a href="#" class="btn btn-empty">Show me more</a>
+      <div class="header-layer">
+        <nav class="navigation">
+          <ul class="nav-items">
+            <li class="nav-iterm">
+              <a class="nav-item-link" href="">Features</a>
+            </li>
+            <li class="nav-iterm">
+              <a class="nav-item-link" href="">Details</a>
+            </li>
+            <li class="nav-iterm">
+              <a class="nav-item-link" href="">Reviews</a>
+            </li>
+            <li class="nav-iterm"><a class="nav-item-link" href="">Plan</a></li>
+            <li class="nav-iterm">
+              <a class="nav-item-link" href="">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-main">
+          <div class="header-main-heading">
+            <h1>Meals Plans.</h1>
+            <h1>For <span>Everyone</span></h1>
+          </div>
+          <div class="header-main-btn-group">
+            <a href="#" class="btn">Book Now</a>
+            <a href="#" class="btn btn-empty">Show me more</a>
+          </div>
         </div>
       </div>
     </header>
@@ -91,36 +86,35 @@
       </section>
 
       <!-- Steps to follow section-->
-      <section>
+      <section class="follow">
         <h2 class="section-header">steps to follow</h2>
-        <div>
+        <div class="container-parent__follow">
           <div>
             <img src="./assets/images/Capture.PNG" alt="" />
           </div>
-          <div>
-            <ul>
-              <li>
-                <span>1</span>
-                <span
-                  >Choose the subscription plan that best fits your needs and
-                  sign up today.</span
-                >
-              </li>
-              <li>
-                <span>2</span>
-                <span
-                  >Order your delicious meal using our mobile app or website. Or
-                  you can even call us!</span
-                >
-              </li>
-              <li>
-                <span>3</span>
-                <span>
-                  Enjoy your meal after less than 20 minutes. See you the next
-                  time!</span
-                >
-              </li>
-            </ul>
+          <div class="follow-steps-container">
+            <div class="follow-steps">
+              <div class="follow-step-count">1</div>
+              <p class="follow-steps-data">
+                Choose the subscription plan that best fits your needs and sign
+                up today.
+              </p>
+            </div>
+
+            <div class="follow-steps">
+              <div class="follow-step-count">2</div>
+              <p class="follow-steps-data">
+                Order your delicious meal using our mobile app or website. Or
+                you can even call us!
+              </p>
+            </div>
+            <div class="follow-steps">
+              <div class="follow-step-count">3</div>
+              <p class="follow-steps-data">
+                Enjoy your meal after less than 20 minutes. See you the next
+                time!
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -136,7 +130,7 @@
                 src="./assets/images/customer.jpg"
                 alt=""
               />
-              <h3>david smith</h3>
+              <h3 class="card__review-name">david smith</h3>
               <p class="card__review-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 iure odio, quod nisi facilis commodi ut sunt ipsam, magnam eius
@@ -156,7 +150,7 @@
                 src="./assets/images/customer.jpg"
                 alt=""
               />
-              <h3>david smith</h3>
+              <h3 class="card__review-name">david smith</h3>
               <p class="card__review-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 iure odio, quod nisi facilis commodi ut sunt ipsam, magnam eius
@@ -176,7 +170,7 @@
                 src="./assets/images/customer.jpg"
                 alt=""
               />
-              <h3>david smith</h3>
+              <h3 class="card__review-name">david smith</h3>
               <p class="card__review-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 iure odio, quod nisi facilis commodi ut sunt ipsam, magnam eius
@@ -219,12 +213,14 @@
             <h3>Premium</h3>
             <h4>$399<span>/month</span></h4>
             <p>That's only 13.30$ per meal</p>
+            <hr />
             <ul>
               <li>1 meal every day</li>
               <li>Order 24/7</li>
               <li>Access to newest creations</li>
               <li>Free delivery</li>
             </ul>
+            <hr />
             <div class="signup-button">
               <a href="#" class="btn">I'm hungry</a>
             </div>
@@ -234,12 +230,14 @@
             <h3>Premium</h3>
             <h4>$399<span>/month</span></h4>
             <p>That's only 13.30$ per meal</p>
+            <hr />
             <ul>
               <li>1 meal every day</li>
               <li>Order 24/7</li>
               <li>Access to newest creations</li>
               <li>Free delivery</li>
             </ul>
+            <hr />
             <div class="signup-button">
               <a href="#" class="btn">I'm hungry</a>
             </div>

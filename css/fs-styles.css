@@ -15,7 +15,8 @@ li,
 a,
 label,
 option {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: gray;
 }
 
 section {
@@ -23,6 +24,7 @@ section {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin: 6rem 0;
 }
 
 a {
@@ -34,18 +36,20 @@ li {
 }
 
 h1 {
-  font-size: 4.5rem;
-  color: #f63854;
+  font-size: 9.5rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 h1 span {
-  color: #fff;
+  color: #f63854;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 6rem;
   color: gray;
   text-transform: uppercase;
+  margin: 2rem auto 2rem auto;
 }
 
 h2::after {
@@ -59,6 +63,9 @@ h2::after {
 h3 {
   text-align: center;
   padding: 20px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: gray;
 }
 
 h4 {
@@ -85,7 +92,7 @@ header {
   background-size: cover;
   position: relative;
 }
-.header-main {
+.header-layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,13 +100,29 @@ header {
   width: 100%;
   height: 100%;
 }
+.header-main {
+  display: flex;
+  flex-direction: column;
+  margin: 16vh 20%;
+}
 ul.nav-items {
   display: flex;
   justify-content: flex-end;
+  gap: 1.5rem;
 }
 h1.header-main-heading {
   display: flex;
   flex-direction: column;
+}
+
+.navigation {
+  margin: 2.5rem;
+}
+
+.nav-item-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 /* END : Page header*/
 
@@ -133,11 +156,74 @@ footer {
 
 /* END : Page footer*/
 
+/* START : Features section*/
+div.container-parent {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+div.container {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 500px;
+}
+/* END : Features section*/
+
+/* START : Follow section*/
+
+.follow {
+  background-image: linear-gradient(rgba(27, 38, 49, 0.1), #fff);
+}
+
+.container-parent__follow {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.follow-steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.follow-steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.follow-step-count {
+  color: #f63854;
+  font-size: 6rem;
+  border: 2px solid #f63854;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.follow-steps-data {
+  font-size: 2.5rem;
+}
+
+/* End : Follow section*/
+
 /* START : Reviews section*/
 
 .section__reviews {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg")
     no-repeat center;
   background-size: cover;
@@ -159,6 +245,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__review {
@@ -178,39 +266,29 @@ footer {
 
 .card__review-rating i {
   color: #f63854;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.card__review-name {
+  color: #000;
 }
 
 /* END : Reviews section*/
 
-.icon {
-  text-align: center;
-  margin-left: 40%;
-  color: #f63854;
-  font-size: 300%;
-  margin-bottom: 0.9rem;
-}
-
-div.container-parent {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-div.container {
-  margin-bottom: 30px;
-  margin-right: 15px;
-  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
-  width: 40%;
-  padding: 20px;
-}
-
+/* Start : Price section*/
 div.card {
-  width: 250px;
+  border-radius: 4%;
+  width: 350px;
   border: 2px solid lightgray;
-  padding: 25px 10px 50px 10px;
+  margin: 3em 0em;
+  padding: 25px 10px 15px;
   line-height: 30px;
-  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+  box-shadow: rgba(27, 38, 49, 0.1) 0px 10px 22px 10px;
+}
+
+div.card:hover {
+  transform: scale(1.3);
 }
 
 .signup-button {
@@ -227,13 +305,15 @@ div.cards-container {
 }
 
 div.card {
-  border-radius: 4%;
-  width: 250px;
-  border: 2px solid lightgray;
-  margin: 3em 0em;
-  padding: 25px 10px 15px;
-  line-height: 30px;
-  box-shadow: rgba(27, 38, 49, 0.1) 0px 10px 22px 10px;
+}
+
+/* End : Price section*/
+
+.icon {
+  text-align: center;
+  color: #f63854;
+  font-size: 5rem;
+  margin-bottom: 0.9rem;
 }
 
 a.btn {
@@ -245,6 +325,7 @@ a.btn {
   border-radius: 64px;
   border: 1px solid #f63854;
   transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  font-size: 3rem;
 }
 
 a.btn-empty {
