@@ -1,0 +1,277 @@
+/* START : Page style - common to all sections*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+p,
+li,
+a,
+label,
+option {
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #f63854;
+}
+
+h1 span {
+  color: #fff;
+}
+
+h2 {
+  font-size: 30px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+h2::after {
+  content: "";
+  color: #f63854;
+  display: block;
+  border-bottom: solid;
+  margin: 30px 65px;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+h4 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #f63854;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h4 span {
+  font-size: 15px;
+  color: gray;
+  font-weight: normal;
+}
+/* End : Page style - common to all sections*/
+
+/* START : Page header*/
+header {
+  width: 100%;
+  height: 80vh;
+  background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.header-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+ul.nav-items {
+  display: flex;
+  justify-content: flex-end;
+}
+h1.header-main-heading {
+  display: flex;
+  flex-direction: column;
+}
+/* END : Page header*/
+
+/* START : Page footer*/
+.footer-parent {
+  display: flex;
+  justify-content: space-between;
+}
+ul.footer-text {
+  display: flex;
+  justify-content: flex-start;
+}
+ul.social-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  background-color: rgb(58, 56, 56);
+}
+
+.footer-text {
+  width: 70%;
+  padding-right: 6%;
+}
+
+.footer-parent {
+  padding-top: 3%;
+  padding-left: 4%;
+}
+
+/* END : Page footer*/
+
+/* START : Reviews section*/
+
+.section__reviews {
+  width: 100%;
+  height: 50vh;
+  background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.container-parent__reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.container-parent__reviews-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.card__review {
+  width: 50rem;
+  padding: 5rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__review-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card__review-rating i {
+  color: #f63854;
+}
+
+/* END : Reviews section*/
+
+.icon {
+  text-align: center;
+  margin-left: 40%;
+  color: #f63854;
+  font-size: 300%;
+  margin-bottom: 0.9rem;
+}
+
+div.container-parent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container {
+  margin-bottom: 30px;
+  margin-right: 15px;
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+  width: 40%;
+  padding: 20px;
+}
+
+div.card {
+  width: 250px;
+  border: 2px solid lightgray;
+  padding: 25px 10px 50px 10px;
+  line-height: 30px;
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+}
+
+.signup-button {
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+
+div.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div.card {
+  border-radius: 4%;
+  width: 250px;
+  border: 2px solid lightgray;
+  margin: 3em 0em;
+  padding: 25px 10px 15px;
+  line-height: 30px;
+  box-shadow: rgba(27, 38, 49, 0.1) 0px 10px 22px 10px;
+}
+
+a.btn {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+  padding: 15px 25px;
+  background: #f63854;
+  border-radius: 64px;
+  border: 1px solid #f63854;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+a.btn-empty {
+  color: #f63854;
+  background-color: transparent;
+}
+
+a.btn:hover {
+  transform: scale(1.2);
+}
+
+a.btn-empty:hover {
+  color: white;
+  background: #f63854;
+}
+
+div.form-container-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+video {
+  width: 35%;
+}
+
+div.showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
