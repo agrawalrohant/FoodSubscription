@@ -201,6 +201,10 @@ div.form-container-parent {
   width: 50%;
 }
 
+.contact-form label {
+  color: rgb(201, 197, 197);
+}
+
 .contact-video {
   width: 40%;
 }
@@ -298,13 +302,14 @@ footer {
   justify-content: space-evenly;
   width: 100%;
 }
-.footer-text li,
+.footer-text li a,
 .social-link i {
   color: #fff;
   font-size: 3rem;
 }
 
-.footer-copyright {
+.footer-copyright h3 {
   font-size: 2.5rem;
+  color: #c8c0c0;
 }
 /* END : Page footer*/

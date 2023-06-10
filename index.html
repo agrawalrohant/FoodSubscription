@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Author:Rohant Agrawal,
+    Illustrator: Dummy Food Subscription App"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +38,7 @@
       label,
       option {
         font-size: 2rem;
-        color: gray;
+        color: rgb(82, 81, 81);
       }
 
       section {
@@ -180,19 +185,44 @@
         <nav class="navigation">
           <ul class="nav-items">
             <li class="nav-iterm">
-              <a class="nav-item-link" href="#features">Features</a>
+              <a
+                aria-label="take me to features"
+                class="nav-item-link"
+                href="#features"
+                >Features</a
+              >
             </li>
             <li class="nav-iterm">
-              <a class="nav-item-link" href="#details">Details</a>
+              <a
+                aria-label="navigate for order detail section"
+                class="nav-item-link"
+                href="#details"
+                >Details</a
+              >
             </li>
             <li class="nav-iterm">
-              <a class="nav-item-link" href="#reviews">Reviews</a>
+              <a
+                aria-label="take me to reviews"
+                class="nav-item-link"
+                href="#reviews"
+                >Reviews</a
+              >
             </li>
             <li class="nav-iterm">
-              <a class="nav-item-link" href="#plans">Plan</a>
+              <a
+                aria-label="take me to plans"
+                class="nav-item-link"
+                href="#plans"
+                >Plan</a
+              >
             </li>
             <li class="nav-iterm">
-              <a class="nav-item-link" href="#signup">Sign Up</a>
+              <a
+                aria-label="take me to signup"
+                class="nav-item-link"
+                href="#signup"
+                >Sign Up</a
+              >
             </li>
           </ul>
         </nav>
@@ -202,8 +232,15 @@
             <h1>For <span>Everyone</span></h1>
           </div>
           <div class="header-main-btn-group">
-            <a href="#plans" class="btn">Book Now</a>
-            <a href="#details" class="btn btn-empty">Show me more</a>
+            <a aria-label="Book Now go to plan" href="#plans" class="btn"
+              >Book Now</a
+            >
+            <a
+              aria-label="Book Now go to details"
+              href="#details"
+              class="btn btn-empty"
+              >Show me more</a
+            >
           </div>
         </div>
       </div>
@@ -373,7 +410,9 @@
             </ul>
             <hr />
             <div class="signup-button">
-              <a href="#header" class="btn">I'm hungry</a>
+              <a aria-label="order now" href="#header" class="btn"
+                >I'm hungry</a
+              >
             </div>
           </div>
 
@@ -399,7 +438,9 @@
             </ul>
             <hr />
             <div class="signup-button">
-              <a href="#header" class="btn">I'm hungry</a>
+              <a aria-label="order now" href="#header" class="btn"
+                >I'm hungry</a
+              >
             </div>
           </div>
 
@@ -425,7 +466,9 @@
             </ul>
             <hr />
             <div class="signup-button">
-              <a href="#header" class="btn">I'm hungry</a>
+              <a aria-label="order now" href="#header" class="btn"
+                >I'm hungry</a
+              >
             </div>
           </div>
         </div>
@@ -436,19 +479,22 @@
         <h2 class="section-header">contact us</h2>
         <div class="form-container-parent">
           <div class="contact-video">
-            <video
-              src="./assets/videos/Avocado.mp4"
-              autoplay
-              loop
-              muted
-            ></video>
+            <video src="./assets/videos/Avocado.mp4" autoplay loop muted>
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="./assets/sintel-en.vtt"
+                default
+              />
+            </video>
           </div>
           <div class="contact-form">
             <form action="">
               <label for="name">Name</label>
               <input
                 placeholder="Your Name"
-                tabindex="1"
+                tabindex="0"
                 id="name"
                 type="text"
               />
@@ -456,13 +502,13 @@
               <label for="email">Email</label>
               <input
                 placeholder="Your Email"
-                tabindex="2"
+                tabindex="0"
                 id="email"
                 type="email"
               />
 
               <label for="findUs">How did you find us</label>
-              <select tabindex="3" name="findUs" id="findUs">
+              <select tabindex="0" name="findUs" id="findUs">
                 <option value="">Friends</option>
                 <option value="">Search</option>
                 <option value="">Advertisement</option>
@@ -472,21 +518,21 @@
               <label for="dropUsLine">Drop us a line</label>
               <textarea
                 placeholder="Your Message"
-                tabindex="4"
+                tabindex="0"
                 name="dropUsLine"
                 id="dropUsLine"
                 cols="30"
                 rows="10"
               ></textarea>
               <div class="contact-form-condition">
-                <input tabindex="5" id="condtions" type="checkbox" />
+                <input tabindex="0" id="condtions" type="checkbox" />
                 <label for="condtions"
                   >I have read and agree with all the Privacy Policy and Terms
                   Conditions</label
                 >
               </div>
               <div class="contact-form-button">
-                <button class="btn" tabindex="6" type="submit">
+                <button class="btn" tabindex="0" type="submit">
                   Send Message
                 </button>
               </div>
@@ -500,42 +546,62 @@
       <div class="footer-parent">
         <div class="footer-links">
           <ul class="footer-text">
-            <a href="#details">
-              <li>About</li>
-            </a>
-            <a href="https://www.apple.com/in/app-store/">
-              <li>ios App</li>
-            </a>
-            <a href="https://play.google.com/">
-              <li>Android App</li>
-            </a>
+            <li>
+              <a aria-label="take me to details" href="#details"> About </a>
+            </li>
+            <li>
+              <a
+                aria-label="take me to apple store app"
+                href="https://www.apple.com/in/app-store/"
+              >
+                ios App
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="take me to android store app"
+                href="https://play.google.com/"
+                >Android App
+              </a>
+            </li>
           </ul>
 
           <ul class="social-link">
             <li>
-              <a href="https://www.facebook.com/"
+              <a
+                aria-label="take me to facebook page"
+                href="https://www.facebook.com/"
                 ><i class="fa-brands fa-square-facebook"></i
               ></a>
             </li>
             <li>
-              <a href="https://twitter.com/">
+              <a
+                aria-label="take me to twitter page"
+                href="https://twitter.com/"
+              >
                 <i class="fa-brands fa-twitter"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/">
+              <a
+                aria-label="take me to instagram page"
+                href="https://www.instagram.com/"
+              >
                 <i class="fa-brands fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.snapchat.com/">
+              <a
+                aria-label="take me to snapchat page"
+                href="https://www.snapchat.com/"
+              >
                 <i class="fa-brands fa-square-snapchat"></i
               ></a>
             </li>
           </ul>
         </div>
         <div class="footer-copyright">
-          <p>Copyright 2019 EVERYONE. All rights reverved.</p>
+          <h3>Copyright 2019 EVERYONE. All rights reverved.</h3>
         </div>
       </div>
     </footer>
