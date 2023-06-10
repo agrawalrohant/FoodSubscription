@@ -117,6 +117,8 @@ h1.header-main-heading {
 
 .navigation {
   margin: 2.5rem;
+  position: sticky;
+  top: 0px;
 }
 
 .nav-item-link {
@@ -124,37 +126,34 @@ h1.header-main-heading {
   text-transform: uppercase;
   font-size: 3rem;
 }
+
+a.btn,
+button.btn {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+  padding: 15px 25px;
+  background: #f63854;
+  border-radius: 64px;
+  border: 1px solid #f63854;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  font-size: 3rem;
+}
+
+a.btn-empty {
+  color: #f63854;
+  background-color: transparent;
+}
+
+a.btn:hover {
+  transform: scale(1.2);
+}
+
+a.btn-empty:hover {
+  color: white;
+  background: #f63854;
+}
 /* END : Page header*/
-
-/* START : Page footer*/
-.footer-parent {
-  display: flex;
-  justify-content: space-between;
-}
-ul.footer-text {
-  display: flex;
-  justify-content: flex-start;
-}
-ul.social-link {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer {
-  background-color: rgb(58, 56, 56);
-}
-
-.footer-text {
-  width: 70%;
-  padding-right: 6%;
-}
-
-.footer-parent {
-  padding-top: 3%;
-  padding-left: 4%;
-}
-
-/* END : Page footer*/
 
 /* START : Features section*/
 div.container-parent {
@@ -173,6 +172,14 @@ div.container {
   height: 320px;
   width: 500px;
 }
+
+.icon {
+  text-align: center;
+  color: #f63854;
+  font-size: 5rem;
+  margin-bottom: 0.9rem;
+}
+
 /* END : Features section*/
 
 /* START : Follow section*/
@@ -287,8 +294,29 @@ div.card {
   box-shadow: rgba(27, 38, 49, 0.1) 0px 10px 22px 10px;
 }
 
+.card-pricing {
+  font-size: 6rem;
+  display: flex;
+  padding: 1rem 1rem 2rem 1rem;
+  line-height: 6rem;
+}
+
+.card-pricing span {
+  font-size: 2.5rem;
+}
+
 div.card:hover {
   transform: scale(1.3);
+}
+
+.card-list-item,
+.card-price-justifing {
+  margin: 0.5rem;
+}
+
+.card-list-item i {
+  color: #f63854;
+  padding: 1rem;
 }
 
 .signup-button {
@@ -304,51 +332,67 @@ div.cards-container {
   flex-wrap: wrap;
 }
 
-div.card {
-}
-
 /* End : Price section*/
 
-.icon {
-  text-align: center;
-  color: #f63854;
-  font-size: 5rem;
-  margin-bottom: 0.9rem;
-}
+/* START : Contact section*/
 
-a.btn {
-  display: inline-block;
-  color: white;
-  margin-right: 15px;
-  padding: 15px 25px;
-  background: #f63854;
-  border-radius: 64px;
-  border: 1px solid #f63854;
-  transition: transform 0.3s, color 0.3s, background-color 0.3s;
-  font-size: 3rem;
-}
-
-a.btn-empty {
-  color: #f63854;
-  background-color: transparent;
-}
-
-a.btn:hover {
-  transform: scale(1.2);
-}
-
-a.btn-empty:hover {
-  color: white;
-  background: #f63854;
+.section__contact {
+  background-color: #212529;
+  height: 100vh;
 }
 
 div.form-container-parent {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 10rem;
+  height: calc(100% - 10rem);
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-video {
+  width: 40%;
 }
 
 video {
-  width: 35%;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form label {
+  font-size: 2.5rem;
+}
+
+input,
+select {
+  height: 6rem;
+  border: 2px solid gray;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+textarea {
+  height: 12rem;
+  border: 2px solid gray;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact-form-button {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
 }
 
 div.showcase {
@@ -356,3 +400,40 @@ div.showcase {
   flex-direction: column;
   justify-content: center;
 }
+
+.contact-form-condition {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* END : Contact section*/
+
+/* START : Page footer*/
+.footer-parent {
+  display: flex;
+  justify-content: space-between;
+}
+ul.footer-text {
+  display: flex;
+  justify-content: flex-start;
+}
+ul.social-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  background-color: rgb(58, 56, 56);
+}
+
+.footer-text {
+  width: 70%;
+  padding-right: 6%;
+}
+
+.footer-parent {
+  padding-top: 3%;
+  padding-left: 4%;
+}
+/* END : Page footer*/

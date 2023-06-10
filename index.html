@@ -193,15 +193,24 @@
         <h2 class="section-header">start eating health today</h2>
         <div class="cards-container">
           <div class="card">
-            <h3>Premium</h3>
-            <h4>$399<span>/month</span></h4>
-            <p>That's only 13.30$ per meal</p>
+            <h3 class="card-heading">Premium</h3>
+            <h4 class="card-pricing">$399<span>/month</span></h4>
+            <p class="card-price-justifing">That's only 13.30$ per meal</p>
             <hr />
-            <ul>
-              <li>1 meal every day</li>
-              <li>Order 24/7</li>
-              <li>Access to newest creations</li>
-              <li>Free delivery</li>
+            <ul class="card-list-items">
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>1 meal every day</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Order 24/7</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i
+                ><span>Access to newest creations</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Free delivery</span>
+              </li>
             </ul>
             <hr />
             <div class="signup-button">
@@ -210,15 +219,24 @@
           </div>
 
           <div class="card">
-            <h3>Premium</h3>
-            <h4>$399<span>/month</span></h4>
-            <p>That's only 13.30$ per meal</p>
+            <h3 class="card-heading">Premium</h3>
+            <h4 class="card-pricing">$399<span>/month</span></h4>
+            <p class="card-price-justifing">That's only 13.30$ per meal</p>
             <hr />
-            <ul>
-              <li>1 meal every day</li>
-              <li>Order 24/7</li>
-              <li>Access to newest creations</li>
-              <li>Free delivery</li>
+            <ul class="card-list-items">
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>1 meal every day</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Order 24/7</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i
+                ><span>Access to newest creations</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Free delivery</span>
+              </li>
             </ul>
             <hr />
             <div class="signup-button">
@@ -227,15 +245,24 @@
           </div>
 
           <div class="card">
-            <h3>Premium</h3>
-            <h4>$399<span>/month</span></h4>
-            <p>That's only 13.30$ per meal</p>
+            <h3 class="card-heading">Premium</h3>
+            <h4 class="card-pricing">$399<span>/month</span></h4>
+            <p class="card-price-justifing">That's only 13.30$ per meal</p>
             <hr />
-            <ul>
-              <li>1 meal every day</li>
-              <li>Order 24/7</li>
-              <li>Access to newest creations</li>
-              <li>Free delivery</li>
+            <ul class="card-list-items">
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>1 meal every day</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Order 24/7</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i
+                ><span>Access to newest creations</span>
+              </li>
+              <li class="card-list-item">
+                <i class="fa-solid fa-check"></i><span>Free delivery</span>
+              </li>
             </ul>
             <hr />
             <div class="signup-button">
@@ -246,18 +273,34 @@
       </section>
 
       <!-- Contact Us section-->
-      <section>
+      <section class="section__contact">
         <h2 class="section-header">contact us</h2>
         <div class="form-container-parent">
-          <video src="./assets/videos/Avocado.mp4"></video>
-
-          <div>
+          <div class="contact-video">
+            <video
+              src="./assets/videos/Avocado.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="contact-form">
             <form action="">
               <label for="name">Name</label>
-              <input tabindex="1" id="name" type="text" />
+              <input
+                placeholder="Your Name"
+                tabindex="1"
+                id="name"
+                type="text"
+              />
 
               <label for="email">Email</label>
-              <input tabindex="2" id="email" type="email" />
+              <input
+                placeholder="Your Email"
+                tabindex="2"
+                id="email"
+                type="email"
+              />
 
               <label for="findUs">How did you find us</label>
               <select tabindex="3" name="findUs" id="findUs">
@@ -269,20 +312,24 @@
 
               <label for="dropUsLine">Drop us a line</label>
               <textarea
+                placeholder="Your Message"
                 tabindex="4"
                 name="dropUsLine"
                 id="dropUsLine"
                 cols="30"
                 rows="10"
               ></textarea>
-
-              <input tabindex="5" id="condtions" type="checkbox" />
-              <label for="condtions"
-                >I have read and agree with all the Privacy Policy and Terms
-                Conditions</label
-              >
-              <div>
-                <button tabindex="6" type="submit">Send Message</button>
+              <div class="contact-form-condition">
+                <input tabindex="5" id="condtions" type="checkbox" />
+                <label for="condtions"
+                  >I have read and agree with all the Privacy Policy and Terms
+                  Conditions</label
+                >
+              </div>
+              <div class="contact-form-button">
+                <button class="btn" tabindex="6" type="submit">
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
