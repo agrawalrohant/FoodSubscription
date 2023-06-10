@@ -28,6 +28,9 @@ You can take a look at the page [here](www.google.com) .
 
 The web page is tested on tools like [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) and [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool)
 Below are the results:
+![light_house_out_01](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/9588f82e-0181-4053-b41b-599e594343c9)
+![Wave_out_01](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/1e7a9978-8417-4272-a7e6-e23c615ca9ac)
+
 
 ## Using HTML5 Features
 
