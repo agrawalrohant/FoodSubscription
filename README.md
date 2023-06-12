@@ -47,6 +47,10 @@ Below are the results:
 4. Transitions and Animations
 5. Flexbox
 
+## Using BEM methodology
+
+The Block, Element, Modifier (BEM) is a standard and very popular front-end naming method for organizing and naming CSS classes. It helps to write clean CSS by following some simple rules.
+
 ## Fancy font
 
 The page uses [Google Kanit](https://fonts.google.com/specimen/Kanit) font.
