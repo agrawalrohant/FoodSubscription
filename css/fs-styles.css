@@ -1,3 +1,17 @@
+/* --Break point defination--
+  1. Small and large Mobiles
+     320px - 600px
+
+  2. Small Devices (Tablet & Large Phone)
+     600px - 768px
+
+  3. Medium devices (landscape tablets and small laptops)
+     768px - 1200px
+
+  4. Extra large devices (large laptops and desktops)
+     1200px and up
+*/
+
 /* START : Features section*/
 div.container-parent {
   display: flex;
@@ -36,6 +50,7 @@ div.container {
   flex-direction: row;
   gap: 4rem;
   align-items: center;
+  margin: 0 2rem;
 }
 
 .follow-steps-container {
@@ -86,6 +101,7 @@ div.container {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  gap: 2rem;
 }
 
 .container-parent__reviews-layer {
@@ -313,3 +329,7 @@ footer {
   color: #c8c0c0;
 }
 /* END : Page footer*/
+
+/* START : Media Queries */
+
+/* END : Media Queries */
