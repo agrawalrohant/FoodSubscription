@@ -28,8 +28,10 @@ You can take a look at the page [here](www.google.com) .
 
 The web page is tested on tools like [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) and [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool)
 Below are the results:
-![light_house_out_03](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/f259e832-fff6-4a30-a252-7653fafb7fdf)
-![Wave_out_02](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/3b1ad76a-fe07-43e1-86a5-a949c96e9305)
+
+<kbd>![light_house_out_03](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/f259e832-fff6-4a30-a252-7653fafb7fdf)</kbd>
+
+<kbd>![Wave_out_02](https://github.com/agrawalrohant/FoodSubscription/assets/57856344/3b1ad76a-fe07-43e1-86a5-a949c96e9305)</kbd>
 
 ## Using HTML5 Features
 
