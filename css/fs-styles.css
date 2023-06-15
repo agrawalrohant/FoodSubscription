@@ -1,3 +1,28 @@
+/* START : Page style - common to all sections*/
+h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: gray;
+}
+
+h4 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #f63854;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h4 span {
+  font-size: 15px;
+  color: gray;
+  font-weight: normal;
+}
+
+/* End : Page style - common to all sections*/
+
 /* START : Features section*/
 div.container-parent {
   display: flex;
@@ -75,21 +100,16 @@ div.container {
   width: 40%;
 }
 
-.follow_image_container img {
-  width: 100%;
-}
-
 /* End : Follow section*/
 
 /* START : Reviews section*/
 
 .section__reviews {
   width: 100%;
-  /*height: 70vh;*/
-  background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg")
+  background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking-min.jpg")
     no-repeat center;
   background-size: cover;
-  /*position: relative;*/
+  background-attachment: fixed;
 }
 
 .container-parent__reviews {
@@ -102,9 +122,6 @@ div.container {
 }
 
 .container-parent__reviews-layer {
-  /*position: absolute;
-  top: 0;
-  left: 0;*/
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
@@ -222,10 +239,6 @@ div.form-container-parent {
 
 .contact-video {
   width: 40%;
-}
-
-video {
-  width: 100%;
 }
 
 form {

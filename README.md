@@ -24,7 +24,7 @@ You can take a look at the page [here](www.google.com) .
 6. Content is clearly visible and readable.
 7. Video/Audio tags have transcription.
 
-## Broweser Performence
+## Broweser Performence and Accessibility Sanity Test
 
 The web page is tested on tools like [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) and [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool)
 Below are the results:
@@ -61,5 +61,5 @@ The page uses [Font Awesome](https://fontawesome.com/icons) Icons.
 
 # Running locally
 
-Once you clone the project just deploy it on any server and launch the index.html in you browser.
+Once you clone the project just deploy it on any server and launch the index-min.html in you browser.
 If you are using VSCode simple run the on Live Server and load the page.
